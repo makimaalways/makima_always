@@ -25,7 +25,7 @@ export default function Home() {
     { code: "MA14", item: "Karuta Card Dropping Service - 7 Days", price: "60 INR/-" },
     { code: "MA15", item: "Karuta Card Dropping Service - 30 Days", price: "175 INR/-" },
     { code: "MA16", item: "Karuta Card Dropping Code", price: "350 INR/-" },
-    { code: "MA16", item: "Sofi Card Dropping Code", price: "350 INR/-" },
+    { code: "MA17", item: "Sofi Card Dropping Code", price: "350 INR/-" },
   ];
   return (
     <div className="relative bg-white">
