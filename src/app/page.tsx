@@ -52,9 +52,9 @@ export default function Home() {
           <table className="table-auto w-full border-collapse border border-gray-300">
             <thead>
               <tr className="bg-gray-200">
-                <th className="border border-gray-300 p-2 text-left">Code</th>
-                <th className="border border-gray-300 p-2 text-left">Item</th>
-                <th className="border border-gray-300 p-2 text-center">Price</th>
+                <th className="border border-gray-300 p-2 text-left text-red-600">Code</th>
+                <th className="border border-gray-300 p-2 text-left text-purple-600">Item</th>
+                <th className="border border-gray-300 p-2 text-left text-green-600">Price</th>
               </tr>
             </thead>
             <tbody>
@@ -64,7 +64,7 @@ export default function Home() {
                   <td className="border border-gray-300 p-2 text-left w-[200px] sm:w-[500px] text-purple-600">
                     {item.item}
                   </td>
-                  <td className="border border-gray-300 p-2 text-center font-semibold text-green-700">
+                  <td className="border border-gray-300 p-2 text-left font-semibold text-green-600">
                     {item.price}
                   </td>
                 </tr>
