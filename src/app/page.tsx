@@ -25,9 +25,10 @@ export default function Home() {
     { code: "MA14", item: "Karuta Card Dropping Service - 7 Days", price: "60 INR/-" },
     { code: "MA15", item: "Karuta Card Dropping Service - 30 Days", price: "175 INR/-" },
     { code: "MA16", item: "Karuta Card Dropping Code", price: "350 INR/-" },
-    { code: "MA17", item: "Sofi Card Dropping Code", price: "350 INR/-" },
+    { code: "MA17", item: "Sofi Card Dropping Code", price: "400 INR/-" },
     { code: "MA18", item: "Index Verification on your Discord Account + Trick to play", price: "50 INR/-" },
     { code: "MA19", item: "Mazoku Verification on your Discord Account", price: "40 INR/-" },
+    { code: "MA20", item: "Building & Deploying Website Like this", price: "500 INR/-" },
   ];
   return (
     <div className="relative bg-white">
