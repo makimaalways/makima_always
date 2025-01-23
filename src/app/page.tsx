@@ -183,63 +183,63 @@ export default function Home() {
     <div className="relative bg-white">
 
       {/* Intro */}
-      <div className="h-screen bg-gradient-to-b from-black to-red-950 flex flex-col gap-5 items-center justify-center">
+      <div className="h-screen bg-gradient-to-b from-orange-600 to-orange-400 flex flex-col gap-5 items-center justify-center">
         <div className=" flex  flex-col items-center relative">
-          <div className="md:text-8xl text-5xl md:font-bold font-extrabold text-white">Makima Always</div>
+          <div className="md:text-8xl text-4xl md:font-bold font-extrabold text-white">Makima Always</div>
           <div className="md:text-3xl text-xl font-thin text-white animate-pulse">Discord: @makima_always</div>
         </div>
         <Link
           href={"https://discord.gg/KKVtgWGAEj"}
           target="_blank"
         >
-          <div className="bg-white p-2 px-4 rounded-md shadow-red-800/50 shadow-lg hover:scale-105 transition-all ease-in-out">
+          <div className="bg-white p-2 px-4 rounded-md shadow-orange-600 shadow-lg hover:scale-105 transition-all ease-in-out">
             Join Discussion Discord Server
           </div>
         </Link>
       </div>
 
       {/* 2nd Page */}
-      <div className="h-auto bg-gradient-to-b from-red-950 to-red-900 flex items-center justify-center relative">
+      <div className="h-auto bg-gradient-to-b from-orange-400 to-orange-600 flex items-center justify-center relative">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-10 ">
+        <div className="grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 gap-5 p-10 w-[400px] sm:w-[600px] md:w-[1200px]">
           {items.map((item) => (
             <div key={item.code} className="bg-white rounded-lg shadow-md p-4 flex flex-col gap-5 justify-between">
               {/* Item Title and Price */}
-              <div className="bg-gradient-to-r from-red-200 to-white p-3 rounded-lg flex justify-start items-center gap-4">
-                <div className=" w-[100px] bg-red-900 shadow-md shadow-red-600/50 rounded-lg h-[50px] flex items-center justify-center text-white font-semibold pointer-events-none">{item.code}</div>
-                <div className="border-l-2 border-red-900 pl-4 w-[360px] text-xl antialiased text-red-900 font-bold">{item.item}</div>
+              <div className="bg-gradient-to-r from-orange-200 to-white p-3 rounded-lg flex justify-start items-center gap-4">
+                <div className=" w-[100px] bg-orange-500 shadow-md shadow-orange-600/50 rounded-lg h-[50px] flex items-center justify-center text-white font-semibold pointer-events-none">{item.code}</div>
+                <div className="border-l-2 border-orange-600 pl-4 w-[360px] text-xl antialiased text-orange-600 font-bold">{item.item}</div>
 
               </div>
 
               {/* Description */}
-              <div className="bg-gradient-to-r from-red-200 to-white p-3 rounded-lg">
-                <div className="text-md underline text-red-800 font-bold">Description</div>
-                <div className="text-red-600 text-[13px]">{item.description}</div>
+              <div className="bg-gradient-to-r from-orange-200 to-white p-3 rounded-lg">
+                <div className="text-md underline text-orange-600 font-bold">Description</div>
+                <div className="text-orange-600 text-[13px]">{item.description}</div>
               </div>
 
               {/* Features (if available) */}
               {item.features && item.features.length > 0 && (
-                <div className="bg-gradient-to-r from-red-200 to-white p-3 rounded-lg">
-                  <div className="text-md underline text-red-800 font-bold">Features</div>
-                  <ul className="list-disc text-red-600 pl-5 text-[13px]">
+                <div className="bg-gradient-to-r from-orange-200 to-white p-3 rounded-lg">
+                  <div className="text-md underline text-orange-600 font-bold">Features</div>
+                  <ul className="list-disc text-orange-600 pl-5 text-[13px]">
                     {item.features.map((feature, index) => (
                       <li key={index}>{feature}</li>
                     ))}
                   </ul>
-                  <div className="text-red-600 font-extralight text-[13px] px-2 py-1 border border-red-600 rounded-md mt-2">
+                  <div className="text-orange-600 font-extralight text-[13px] px-2 py-1 border border-orange-600 rounded-md mt-2">
                     Some advanced features are intentionally omitted to ensure code integrity and prevent exploitation.
                   </div>
                 </div>
               )}
               <div className="flex justify-center items-center gap-5">
-                <div className=" w-[120px] bg-lime-500 shadow-md shadow-lime-600/50 rounded-lg h-[50px] flex items-center justify-center text-lime-950 font-semibold pointer-events-none">
+                <div className=" w-[120px] bg-lime-500 shadow-md shadow-lime-600/50 rounded-lg h-[50px] flex items-center justify-center text-black font-semibold pointer-events-none">
                   {item.price}
                 </div>
                 <Link
                   href={"https://discord.gg/KKVtgWGAEj"}
                   target="_blank"
                 >
-                  <div className=" w-[120px] bg-purple-600 shadow-md shadow-purple-600/50 rounded-lg h-[50px] flex items-center justify-center text-white font-semibold hover:scale-110 duration-500 transition-all ease-in-out">
+                  <div className=" w-[120px] bg-orange-600 shadow-md shadow-orange-600/50 rounded-lg h-[50px] flex items-center justify-center text-white font-semibold hover:scale-110 duration-500 transition-all ease-in-out">
                     Order Now
                   </div>
                 </Link>
@@ -252,8 +252,8 @@ export default function Home() {
       </div>
 
       {/* 3rd Page */}
-      <div className="h-auto bg-gradient-to-b from-red-900 to-red-950 flex flex-col gap-5 items-center justify-center relative">
-        <div className="bg-black/50 shadow-md rounded-lg p-2 py-10 flex flex-col justify-center items-center gap-5 mb-10">
+      <div className="h-auto bg-gradient-to-b from-orange-600 to-orange-400 flex flex-col gap-5 items-center justify-center relative">
+        <div className="bg-orange-500/50 shadow-md rounded-lg p-2 py-10 flex flex-col justify-center items-center gap-5 mb-10">
           <div className="text-4xl font-bold text-white ">Contact Me</div>
           <Image
             src={"/contact.png"}
